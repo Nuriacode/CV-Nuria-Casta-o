@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Evalución final modulo 2 Nuriacode</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a5f3fa4005.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header">
+        <i class="fa-solid fa-martini-glass-citrus"></i>
+        <h1 class="header--title">Buscador de Cocktails</h1>
+        <i class="fa-solid fa-martini-glass-citrus"></i>
+      </header>
+
+      <main class="main">
+        <section class="main__section">
+          <h2 class="main__section--title">Cocktail Drinks</h2>
+          <form class="main__section--form" action="">
+            <label class="main__section--form--label" for="input"
+              >¿Qué cocktail te gustaría buscar?</label
+            >
+            <input
+              id="input"
+              class="main__section--form--input js_descSearch"
+              type="text"
+              placeholder="Escriba aquí"
+              required
+            />
+            <input
+              class="main__section--form--search js_btnSearch"
+              type="submit"
+              value="Buscar"
+            />
+            <input
+              class="main__section--form--reset js_btnReset"
+              type="button"
+              value="Reset"
+            />
+            <p class="js_msg"></p>
+          </form>
+        </section>
+        <div class="main__list">
+          <div class="main__list--listDrinks">
+            <h2 class="main__list--listDrinks--title">Lista de Cócteles</h2>
+            <ul class="main__list--listDrinks--list js_listCocktail"></ul>
+          </div>
+          <div class="main__list--listFavDrinks">
+            <h2 class="main__list--listFavDrinks--title">Favoritos</h2>
+            <ul class="main__list--listFavDrinks--list js_listFavorites"></ul>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+          <p class="footer--p">Copyright 2023</p>
+      </footer>
+
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
