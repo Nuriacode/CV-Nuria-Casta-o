@@ -35,6 +35,9 @@
     align-self: center;
     text-align: center;
     padding-bottom: 1rem;
+    white-space: nowrap;
+    
+
 
     &--title {
       text-transform: uppercase;
@@ -45,7 +48,23 @@
       padding-right: 2rem;
       padding-top: 1rem;
       padding-bottom: 1rem;
-    }
+    //   border-right: 4px solid;
+    //   width: 14ch;
+    //   animation: typing 2s steps(14), blikn .5s infinite step-end alternate;
+    //     overflow: hidden;
+      
+    //     @key-frames typing {
+    //       from {
+    //         width: 0
+    //       }
+    //     }
+      
+    //     @key-frames blink {
+    //       50% {
+    //         border-color: transparent
+    //       }
+    //     }
+     }
 
     &--job{
       padding-top: 1.5rem;
