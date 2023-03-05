@@ -1,16 +1,16 @@
 .main {
   font-family: "PT sans";
 
-  &__aboutMe_article {
+  &__aboutMe__article {
     display: flex;
     flex-direction: column;
-   
 
-    &--img {
-      padding-top: 2rem;
-      background-repeat: no-repeat;
-      width: 100%;
+    @media all and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
     }
+
     &--div {
       padding-left: 1.5rem;
       padding-right: 1.5rem;
@@ -18,40 +18,58 @@
       flex-direction: row;
       align-items: baseline;
 
+      @media all and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
       .fa-solid {
         font-size: 1.2rem;
         color: #39b5e0;
         padding-right: 0.5rem;
       }
+
       &--h2 {
         font-size: 1.5rem;
         text-transform: uppercase;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
       }
-    }
-    &--text {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-      padding-bottom: 1.5rem;
-        font-size: 0.8rem;
-    }
-    &--button {
-      text-transform: uppercase;
-      color: white;
-      background-color: black;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      border-radius: 5px;
-      width: 10rem;
-      margin-left: 1.5rem;
-      margin-right: 1.5rem;
-    font-size: 0.8rem;
 
-      .fa-download {
-        padding-right: 0.4rem;
+      &--text {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1.5rem;
+        font-size: 0.8rem;
+      }
+
+      &--button {
+        text-transform: uppercase;
+        color: white;
+        background-color: black;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-radius: 5px;
+        width: 10rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        font-size: 0.8rem;
+
+        .fa-download {
+          padding-right: 0.4rem;
+        }
+      }
+    }
+
+    &--img {
+      padding-top: 2rem;
+      background-repeat: no-repeat;
+      width: 100%;
+      @media all and (min-width: 768px) {
+        padding-top: 0px;
       }
     }
   }
@@ -110,5 +128,4 @@
   }
   &__worksImage {
   }
-
 }

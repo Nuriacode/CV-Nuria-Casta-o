@@ -26,19 +26,39 @@
           font-size: 1.5rem;
           text-transform: uppercase;
           padding-top: 1.5rem;
-          padding-bottom: 1.5rem;
+          padding-bottom: 1.3rem;
         }
       }
-      &--text {
+            &--text1 {
+              font-style: italic;
+              padding-left: 1.5rem;
+              padding-right: 1.5rem;
+              padding-bottom: 0.5rem;
+              font-size: 1.1rem;
+            }
+      &--text2 {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
-        padding-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
         font-size: 0.8rem;
       }
       &--icons {
         display: flex;
         flex-direction: row;
         align-items: baseline;
+        padding-left: 1.5rem;
+        padding-bottom: 1.5rem;
+        font-size: 1.3rem;
+        gap: 0.6rem;
+        
+        .linkedin{
+          color: white;
+          text-decoration: none;
+        }
+        .github{
+          color: white;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -50,6 +70,16 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     gap: 0.5rem;
+
+    &--label{
+      font-style: italic;
+    }
+
+    &--input{
+      border: 0;
+      border-bottom: solid 1px grey;
+      margin-bottom: 1rem;
+    }
 
     &--button {
       text-transform: uppercase;
@@ -64,6 +94,7 @@
       border-radius: 5px;
       width: 10rem;
       font-size: 0.8rem;
+      margin-bottom: 1rem;
     }
   }
 }
