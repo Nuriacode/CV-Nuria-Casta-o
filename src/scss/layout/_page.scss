@@ -13,7 +13,7 @@
 
     &--div {
       padding-left: 1.5rem;
-      padding-right: 1.5rem;
+      padding-right: 3rem;
       display: flex;
       flex-direction: column;
       align-items: baseline;
@@ -22,6 +22,8 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        padding-left: 3rem;
+        padding-right: 3rem;
       }
 
       &--divTitle {
@@ -74,6 +76,9 @@
         margin-left: 1.5rem;
         margin-right: 1.5rem;
         font-size: 0.8rem;
+        @media all and (min-width: 768px) {
+            margin-bottom: 3rem;
+          }
 
         .fa-download {
           padding-right: 0.4rem;
@@ -103,6 +108,11 @@
     font-size: 0.8rem;
     padding-bottom: 2rem;
     gap: 2rem;
+    @media all and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
 
     &__article {
       display: flex;
@@ -129,6 +139,10 @@
       display: flex;
       flex-direction: row;
       align-items: baseline;
+      @media all and (min-width: 768px) {
+          padding-left: 3rem;
+          padding-right: 3rem;
+        }
 
       .fa-laptop-code {
         font-size: 1.2rem;
@@ -141,9 +155,36 @@
         padding-bottom: 1.5rem;
       }
     }
+
     &--text {
+      @media all and (min-width: 768px) {
+          padding-left: 3rem;
+          padding-right: 3rem;
+        }
     }
   }
+
   &__worksImage {
+    display: flex;
+    flex-direction: column;
+
+    @media all and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0px;
+      }
+   
+    &--pr{
+      width: 100%;
+      margin: 0px;
+      @media all and (min-width: 768px) {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin: 0px;
+        }
+    }
   }
 }
