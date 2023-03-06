@@ -77,8 +77,8 @@
         margin-right: 1.5rem;
         font-size: 0.8rem;
         @media all and (min-width: 768px) {
-            margin-bottom: 3rem;
-          }
+          margin-bottom: 3rem;
+        }
 
         .fa-download {
           padding-right: 0.4rem;
@@ -101,30 +101,84 @@
     color: rgb(226, 226, 226);
     background-color: black;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 2rem;
     font-size: 0.8rem;
     padding-bottom: 2rem;
     gap: 2rem;
+
     @media all and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    &__colum1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 50%;
+      @media all and (min-width: 768px) {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
       }
 
-    &__article {
+      &__article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1rem;
+
+        &--img {
+          background-color: white;
+          border-radius: 50%;
+          width: 6rem;
+          margin-bottom: 0.8rem;
+        }
+
+        &--h3 {
+          text-transform: uppercase;
+          padding-bottom: 0.6rem;
+          font-weight: bold;
+        }
+      }
+    }
+    &__colum2 {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+      width: 50%;
+      @media all and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
 
-      &--h3 {
-        text-transform: uppercase;
-        padding-bottom: 0.6rem;
-        font-weight: bold;
+      &__article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1rem;
+
+        &--img {
+          background-color: white;
+          border-radius: 50%;
+          width: 6rem;
+          margin-bottom: 0.8rem;
+        }
+
+        &--h3 {
+          text-transform: uppercase;
+          padding-bottom: 0.6rem;
+          font-weight: bold;
+        }
       }
     }
   }
@@ -140,9 +194,9 @@
       flex-direction: row;
       align-items: baseline;
       @media all and (min-width: 768px) {
-          padding-left: 3rem;
-          padding-right: 3rem;
-        }
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
 
       .fa-laptop-code {
         font-size: 1.2rem;
@@ -158,9 +212,9 @@
 
     &--text {
       @media all and (min-width: 768px) {
-          padding-left: 3rem;
-          padding-right: 3rem;
-        }
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
     }
   }
 
@@ -169,22 +223,22 @@
     flex-direction: column;
 
     @media all and (min-width: 768px) {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 0px;
-      }
-   
-    &--pr{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0px;
+    }
+
+    &--pr {
       width: 100%;
       margin: 0px;
       @media all and (min-width: 768px) {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          margin: 0px;
-        }
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0px;
+      }
     }
   }
 }
